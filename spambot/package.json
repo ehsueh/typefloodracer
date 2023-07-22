@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ethers": "5.4",
+    "web3": "^4.0.3"
+  },
+  "name": "spambot",
+  "version": "1.0.0",
+  "description": "spam and stress test the dev net!",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

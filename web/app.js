@@ -1,4 +1,15 @@
+// const { ethers } = require('ethers');
+// const fs = require('fs');
+// const config = require('./config'); // Use 'require' for importing local modules
+// const provider = new ethers.providers.JsonRpcProvider(config.rpcUrl);
+// const abiFile = "../erc20/artifacts/contracts/ERC20.sol/ERC20.json";
+// const parsed = JSON.parse(fs.readFileSync(abiFile));
+// const abi = parsed.abi;
+// const contractAddress = '0x394Ba55575E35E52Ad082F232FaE761B46C1294D';
+// const contract = new ethers.Contract(contractAddress, abi, provider);
+
 chrome.runtime.onMessage.addListener((message,sender,sendResponse)=>{
+    // console.log("address", contract.address)
     console.log(message)
     console.log(sender)
     sendResponse("Received message in background!!")

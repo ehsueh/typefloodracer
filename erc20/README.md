@@ -1,3 +1,5 @@
+Example ERC20 with modification to add dotenv in hardhat.config.js
+
 # Example deploying ERC20 and verify contract to Neonlabs devnet using Hardhat and Neonscan
 This directory contains all the files necessary to deploy simplest ERC20-like contract using Neon onto the Solana blockchain.
 This example base on project https://github.com/neonlabsorg/examples/tree/main/simple-erc20-hardhat
