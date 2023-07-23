@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Type Flood Racer",
-    "description": "My frist invovlement in a Hackathon project. This is a chrome extension helps the user mint transcations to NEON.",
+    "description": "This is a fun web3 chrome extension that crowdsources NEON EVM testnet load testing in a gamified way by rewarding users as they challenge each other in typing games and productive coding or emailing sessions!",
     "version": "1.0",
     "permissions" : [
         "tabs",
@@ -16,5 +16,8 @@
       },
     "action":{
       "default_title": "Click me for something fun!"
+    },
+    "icons": {
+      "16": "./typefloodracer.jpeg"
     }
   }

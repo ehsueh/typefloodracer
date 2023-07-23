@@ -55,9 +55,10 @@ async function transferEther() {
   } catch (error) {
     console.error('Error:', error);
   }
+  return signer;
 }
 
-async function mint() {
+async function mint(receiver) {
   try {
     // Call the contract method using the 'call' function
     const result = await contract[methodName](...methodArgs, {
@@ -72,8 +73,11 @@ async function mint() {
 }
 
 async function main() {
-  await transferEther();
-  await mint();
+  let receiver = new ethers.Wallet(config.privateKey);
+  if (useBurnerAddress) {
+    receiver = await transferEther();
+  } 
+  await mint(receiver);
 }
 
 main();
